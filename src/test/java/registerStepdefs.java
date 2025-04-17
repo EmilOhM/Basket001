@@ -89,6 +89,7 @@ public class registerStepdefs {
 
     @When("I click confirm and join")
     public void iClickRegisterWithoutEnteringLastName() {
+
         driver.findElement(By.name("join")).click();
     }
 
