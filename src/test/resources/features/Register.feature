@@ -9,8 +9,8 @@ Feature:
     When I enter a valid email address
     When I enter a valid password
     When I click terms and conditions
+    When I click I am eighteen years of age box
     When I click the code of ethics box
-    #When I click confirm and join
     Then I registered a new account
 
 
@@ -22,6 +22,7 @@ Feature:
       When I enter a valid email address
       When I enter a valid password
       When I click terms and conditions
+      When I click I am eighteen years of age box
       When I click the code of ethics box
       When I click confirm and join
       Then I get result you forgot your last name
@@ -36,6 +37,7 @@ Feature:
     When I enter a valid email address
     When I enter different passwords
     When I click terms and conditions
+    When I click I am eighteen years of age box
     When I click the code of ethics box
     When I click confirm and join
     Then I get result your passwords arent matching
@@ -50,5 +52,6 @@ Feature:
     When I enter a valid email address
     When I enter a valid password
     When I click the code of ethics box
+    When I click I am eighteen years of age box
     When I click confirm and join
     Then I get result you must agree to terms and conditions

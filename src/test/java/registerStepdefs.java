@@ -20,7 +20,7 @@ public class registerStepdefs {
     public void iHaveTheWebsiteUp() {
         driver.get("https://membership.basketballengland.co.uk/NewSupporterAccount");
         // 2 | setWindowSize | 2560x1368 |  |
-        driver.manage().window().setSize(new Dimension(2560, 1368));
+        //driver.manage().window().setSize(new Dimension(2560, 1368));
         // 3 | type | id=dp | 04/03/2000 |
 
     }
@@ -79,6 +79,12 @@ public class registerStepdefs {
         driver.findElement(By.cssSelector(".md-checkbox:nth-child(7) .box")).click();
     }
 
+    @When("I click I am eighteen years of age box")
+    public void iClickIAmEighteenYearsOfAgeBox() {
+        driver.findElement(By.cssSelector(".md-checkbox:nth-child(2) > label > .box")).click();
+
+    }
+
 
 
     @When("I click confirm and join")
@@ -123,6 +129,9 @@ public class registerStepdefs {
         String expected = "Last Name is required";
         assertEquals(expected, actual);
     }
+
+
+
 
 
 
