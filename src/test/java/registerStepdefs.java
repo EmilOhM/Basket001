@@ -84,8 +84,7 @@ public class registerStepdefs {
 
     //Klickar på skapa account knappen
     @When("I click confirm and join")
-    public void iClickRegisterWithoutEnteringLastName() {
-
+    public void iClickConfirmAndJoin() {
         driver.findElement(By.name("join")).click();
     }
 
@@ -113,7 +112,7 @@ public class registerStepdefs {
 
     //Verifiering av fel olika lösenord för Scenario 3
     @Then("I get result your passwords arent matching")
-    public void iGetResultYouPasswordsArentMatching() {
+    public void iGetResultYourPasswordsArentMatching() {
         WebElement passwordWrong = driver.findElement(By.cssSelector("span.field-validation-error:nth-child(3) > span:nth-child(1)"));
         String actual = passwordWrong.getText();
         String expected = "Password did not match";
