@@ -29,7 +29,7 @@ Feature:
 
 
       #Scenenario 3
-  Scenario: Passwords dont match
+  Scenario: Passwords do not match
     Given I have the website up
     When I enter a valid birthdate
     When I enter a valid first name
